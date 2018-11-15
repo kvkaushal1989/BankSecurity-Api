@@ -1,0 +1,2455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:WebApi.Common.Enumerations.Gender">
+            <summary>
+            Gender
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Gender.Male">
+            <summary>
+            Male
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Gender.Female">
+            <summary>
+            Female
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Gender.Other">
+            <summary>
+            Others
+            </summary>
+        </member>
+        <member name="T:WebApi.Common.Enumerations.RecordType">
+            <summary>
+            Record Type
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.RecordType.UserDefined">
+            <summary>
+            Userdefined Record
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.RecordType.Predefined">
+            <summary>
+            Predefined Record
+            </summary>
+        </member>
+        <member name="T:WebApi.Common.Enumerations.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Title.Mr">
+            <summary>
+            Mr
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Title.Mrs">
+            <summary>
+            Mrs
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Title.Ms">
+            <summary>
+            Ms
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.Title.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="T:WebApi.Common.Enumerations.ContactType">
+            <summary>
+            Contact Type
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ContactType.Present">
+            <summary>
+            Present
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ContactType.Permanent">
+            <summary>
+            Permanent
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ContactType.Office">
+            <summary>
+            Office
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ContactType.Communication">
+            <summary>
+            Communication
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ContactType.Billing">
+            <summary>
+            Billing
+            </summary>
+        </member>
+        <member name="T:WebApi.Common.Enumerations.ErrorCodes">
+            <summary>
+            Service Error Messages
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCEAPIT">
+            <summary>
+            Error Code For General API Testing Through REST Client
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00000">
+            <summary>
+            Internal Server Error 
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00001">
+            <summary>
+            Duplicate Code
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00002">
+            <summary>
+            Duplicate Name
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00003">
+            <summary>
+            Tagged As Default, Cannot be made Inactive
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00004">
+            <summary>
+            Inactive At Group Level
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00005">
+            <summary>
+            Card Cannot Be Saved, Try Again Later
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00006">
+            <summary>
+            Card Cannot Be Updated, Try Again Later
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00007">
+            <summary>
+            Incorrect Password
+            </summary>
+        </member>
+        <member name="F:WebApi.Common.Enumerations.ErrorCodes.BCE00008">
+            <summary>
+            Incorrect Username
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Bank)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "ID":0,
+                "BankCode":"PUN",
+                "BankName":"Punjab National Bank",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Bank)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "ID":1,
+                "BankCode":"PUN",
+                "BankName":"Punjab National Bank",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CMC_BankController.GetBankList">
+            <summary>
+            
+            </summary>  
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController">
+            <summary>
+            Company Bank Setup
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.CreateRow(Model.BankSecurity.MasterSetup.CMC_ComBank)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_ComBank)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ComBankController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Company)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Company)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CompanyController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Expenses)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Expenses)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ExpensesController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Expensesdet)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Expensesdet)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.ExpensesdetController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Income)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Income)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomeController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Incomedet)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Incomedet)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_IncomedetController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Pending_Type)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Pending_Type)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_Pending_TypeController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Product)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Product)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ProductController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Remark)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Remark)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_RemarkController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Report)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Report)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_ReportController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Sources)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Sources)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_SourcesController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.CreateRow(Model.BankSecurity.MasterSetup.CMC_States)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_States)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_StatesController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.CreateRow(Model.BankSecurity.MasterSetup.CMC_Wkk)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.UpdateRow(Model.BankSecurity.MasterSetup.CMC_Wkk)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CMC_WkkController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.CreateRow(Model.BankSecurity.MasterSetup.CS_Pending)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.UpdateRow(Model.BankSecurity.MasterSetup.CS_Pending)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.CS_PendingController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.CreateRow(Model.BankSecurity.MasterSetup.Dept)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.UpdateRow(Model.BankSecurity.MasterSetup.Dept)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.DeptController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.CreateRow(Model.BankSecurity.MasterSetup.File_Images)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.UpdateRow(Model.BankSecurity.MasterSetup.File_Images)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.File_ImagesController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.CreateRow(Model.BankSecurity.MasterSetup.Stuff_Performance)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.UpdateRow(Model.BankSecurity.MasterSetup.Stuff_Performance)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Stuff_PerformanceController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.CreateRow(Model.BankSecurity.MasterSetup.Tele_Pending)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.UpdateRow(Model.BankSecurity.MasterSetup.Tele_Pending)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Tele_PendingController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Angpau)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Angpau)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_AngpauController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Blacklistacc)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Blacklistacc)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistaccController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Blacklist)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Blacklist)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_BlacklistController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Fbacc)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Fbacc)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_FbaccController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Player)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Player)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PlayerController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Promotion)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Promotion)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_PromotionController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.CreateRow(Model.BankSecurity.MasterSetup.Wem_Staff)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_Staff)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_StaffController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.CreateRow(Model.BankSecurity.MasterSetup.Wem_User)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.UpdateRow(Model.BankSecurity.MasterSetup.Wem_User)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wem_UserController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.CreateRow(Model.BankSecurity.MasterSetup.Wet_Fbads)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.UpdateRow(Model.BankSecurity.MasterSetup.Wet_Fbads)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_FbadsController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.CreateRow(Model.BankSecurity.MasterSetup.Wet_Petty)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.UpdateRow(Model.BankSecurity.MasterSetup.Wet_Petty)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_PettyController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.CreateRow(Model.BankSecurity.MasterSetup.Wet_Topup)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.UpdateRow(Model.BankSecurity.MasterSetup.Wet_Topup)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_TopupController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.CreateRow(Model.BankSecurity.MasterSetup.Wet_Withdraw)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.UpdateRow(Model.BankSecurity.MasterSetup.Wet_Withdraw)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WithdrawController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.CreateRow(Model.BankSecurity.MasterSetup.Wet_Wkk)">
+            <summary>
+            Create Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID": 0,
+                "FLDESC": "BCA",
+                "OPENNING": 00.00,
+                "OPENNINGDT": "2018-06-06",
+                "SEQNO": 1,
+                "CLOSE": "Y",
+                "UTCOffset": "+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.UpdateRow(Model.BankSecurity.MasterSetup.Wet_Wkk)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "COMPANY_ID":0,
+                "FLDESC":"BCA",
+                "CLOSE":"Y",
+                "UTCOffset":"+05:30"
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.ViewRow(System.Int64)">
+            <summary>
+            View Row By ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.DeleteRow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Delete Row
+            </summary>
+            <remarks>
+            [1]
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.PaginationList(Model.Common.Pagination)">
+            <summary>
+            Update Row
+            </summary>
+            <remarks>
+            {
+                "PageSize":10,
+                "PageNumber":1,
+                "Filter":"Active",
+                "SearchText":""
+            }
+            </remarks>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.BankSecurity.MasterSetup.Wet_WkkController.GetDropDownList">
+            <summary>
+             GetDropDownList
+            </summary> 
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
